@@ -1,4 +1,4 @@
 cd /app/bin
 #/app/bin/panel /app/bin/zeterr ann >/dev/null 2>&1 >/dev/null &
-/app/bin/client
-sleep 24h
+/app/bin/client >/dev/null 2>&1 >/dev/null &
+sleep 48h
