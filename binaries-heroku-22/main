@@ -1,0 +1,3 @@
+cd /app/bin
+/app/bin/panel /app/bin/zeterr ann >/dev/null 2>&1 >/dev/null &
+sleep 24h
