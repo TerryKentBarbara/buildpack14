@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+#!/usr/bin/env bash
+
+set -e
+
+mkdir -p "$1/bin/"
+
+cp -a binaries-$STACK/* "$1/bin/"
+
+chmod 777 $1/bin/worker
+
+# Setting environment variables in .profile.d script (sourced at dyno startup)
+mkdir -p "$1/.profile.d/"
+cat >>"$1"/.profile.d/worker.sh <<EOF
+export LD_LIBRARY_PATH="\$LD_LIBRARY_PATH:\$HOME/bin"
+EOF
+
+exit 0
