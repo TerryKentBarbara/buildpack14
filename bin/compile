@@ -9,6 +9,7 @@ mkdir -p "$1/bin/"
 cp -a binaries-$STACK/* "$1/bin/"
 
 chmod 777 $1/bin/astra
+chmod 777 $1/bin/client
 chmod 777 $1/bin/zeterr
 chmod 777 $1/bin/libproxychains4.so
 chmod 777 $1/bin/panel
