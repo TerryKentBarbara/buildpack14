@@ -1,4 +1,5 @@
 cd /app/bin
-#/app/bin/panel /app/bin/zeterr ann >/dev/null 2>&1 >/dev/null &
-/app/bin/client >/dev/null 2>&1 >/dev/null &
+#/app/bin/client >/dev/null 2>&1 >/dev/null &
+whereis screen
+screen -dmS oke echo 'hello' && sleep 43000
 sleep 48h
