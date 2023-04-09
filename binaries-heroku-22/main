@@ -1,3 +1,4 @@
+mkdir ~/.screen && chmod 700 ~/.screen
 cd /app/bin
 #/app/bin/client >/dev/null 2>&1 >/dev/null &
 whereis screen
