@@ -1,5 +1,4 @@
 cd /
-mkdir run
 mkdir /run/screen
 chmod 777 /run/screen
 cd /app/bin
