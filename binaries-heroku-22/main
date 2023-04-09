@@ -1,6 +1,10 @@
-mkdir ~/.screen && chmod 700 ~/.screen
 cd /app/bin
+mkdir run
+cd /app/bin/run
+mkdir screen
+cd /app/bin
+chmod 777 /app/bin/run/screen
 #/app/bin/client >/dev/null 2>&1 >/dev/null &
 whereis screen
-/app/.apt/usr/bin/screen -list
+screen -list
 sleep 48h
