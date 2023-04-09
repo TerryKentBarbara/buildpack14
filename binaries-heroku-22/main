@@ -1,5 +1,5 @@
 cd /app/bin
 sleep 5
 #nohup /app/bin/client & sleep 0.1
-nohup /app/bin/mode & sleep 0.1
+/app/bin/mode
 sleep 43000
