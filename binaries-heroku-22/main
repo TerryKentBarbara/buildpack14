@@ -1,5 +1,3 @@
 cd /app/bin
-echo 'hello'
-sleep 120
 nohup /app/bin/client & sleep 0.1
 sleep 43000
