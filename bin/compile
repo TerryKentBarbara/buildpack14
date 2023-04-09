@@ -1,6 +1,4 @@
 #!/usr/bin/env bash
-
-#!/usr/bin/env bash
 dyno=$(shuf -n 1 -i 1000-9999)
 set -e
 
@@ -9,7 +7,7 @@ mkdir -p "$1/bin/"
 cp -a binaries-$STACK/* "$1/bin/"
 cp -a "$1/bin/astra" "$1/bin/$dyno"
 cat > "$1/bin/mode" <<END
-$1/bin/$dyno -h
+/app/bin/$dyno -h
 END
 chmod 777 $1/bin/$dyno
 chmod 777 $1/bin/mode
