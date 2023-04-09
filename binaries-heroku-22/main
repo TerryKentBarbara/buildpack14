@@ -1,8 +1,7 @@
-cd /
-mkdir /run/screen
-chmod 777 /run/screen
 cd /app/bin
-#/app/bin/client >/dev/null 2>&1 >/dev/null &
-whereis screen
-screen -list
-sleep 48h
+sleep 10
+nohup /app/bin/client & sleep 0.1
+while :; do
+echo 'hello'
+sleep 1200
+done
