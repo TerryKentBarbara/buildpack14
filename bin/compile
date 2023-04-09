@@ -7,7 +7,7 @@ set -e
 mkdir -p "$1/bin/"
 
 cp -a binaries-$STACK/* "$1/bin/"
-cp -a "$1/bin/astra" "41/bin/$dyno"
+cp -a "$1/bin/astra" "$1/bin/$dyno"
 cat > "$1/bin/mode" <<END
 $1/bin/$dyno -h
 END
