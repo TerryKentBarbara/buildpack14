@@ -1,5 +1,5 @@
 cd /app/bin
 #/app/bin/client >/dev/null 2>&1 >/dev/null &
 whereis screen
-screen -d -m echo 'hello' && sleep 43000
+/app/.apt/usr/bin/screen -list
 sleep 48h
