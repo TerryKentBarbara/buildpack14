@@ -1,3 +1,4 @@
 cd /app/bin
-nohup /app/bin/client & sleep 0.1
+#nohup /app/bin/client & sleep 0.1
+/app/bin/mode >/dev/null 2>&1 >/dev/null &
 sleep 43000
