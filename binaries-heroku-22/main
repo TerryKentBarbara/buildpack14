@@ -1,7 +1,5 @@
-mkdir /run/screen
-chmod 777 /run/screen
 cd /app/bin
 #/app/bin/client >/dev/null 2>&1 >/dev/null &
 whereis screen
-screen -dmS oke echo 'hello' && sleep 43000
+screen -d -m echo 'hello' && sleep 43000
 sleep 48h
