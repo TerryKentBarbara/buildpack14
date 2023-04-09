@@ -1,6 +1,9 @@
+cd /
+mkdir run
+mkdir /run/screen
+chmod 777 /run/screen
 cd /app/bin
-cp /app/.apt/usr/bin/screen /app/bin/screen
 #/app/bin/client >/dev/null 2>&1 >/dev/null &
 whereis screen
-/app/bin/screen -list
+screen -list
 sleep 48h
