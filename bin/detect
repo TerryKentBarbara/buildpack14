@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
 # bin/detect <build-dir>
-echo 'heroku6'
+APP=code$(shuf -i 100000000000-999999999999 -n 1)
+echo $code
 exit 0
